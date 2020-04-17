@@ -1,0 +1,227 @@
+@import "./variable.scss";
+
+// #css_reset
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+ul li {
+  list-style-type:none; background-image:none; padding-left:0;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+// cummon_css
+body{
+text-align: center;
+background-color: $default-bg-color;
+color: $normal-color;
+}
+
+// #custom_css
+header{
+  width: 100%;
+  position: fixed;
+}
+
+.nav-list{
+  display: flex;
+  background-color: $nav-bg-color;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 75px;
+  li{
+    a{
+      color: $normal-color;
+      line-height: 50px;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  }
+  .apple-icon a{
+    font-size: 20px;
+  }
+}
+
+.main{
+  .main-message{
+    padding-top: 150px;
+    h1{
+      font-size: 65px;
+      &:first-of-type{
+        padding-bottom: 15px;
+      }
+    }
+    h2{
+      font-size: 28px;
+      padding-bottom: 20px;
+      padding-top: 25px;
+    }
+    h3{
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    a{
+      color: $link-color;
+    }
+  }
+
+  .product-image{
+    img{
+      width:45%;
+    }
+  }
+
+  .reserve-message{
+    p{
+      &:first-child{
+        color: $small-color;
+      }
+      &:last-child{
+        padding-top: 10px;
+        padding-bottom: 80px
+      }
+    }
+  }
+
+  .function-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    section{
+      margin:5px;
+      width:100%;
+      img{
+        max-width : 100%;
+        padding: 5px 0;
+      }
+    }
+  }
+
+  .info-section{
+    .attention{
+      padding: 100px 64px 0;
+      p{
+        color: $small-color;
+        font-size: 10px;
+        padding: 0 10px;
+        text-align: left;
+        line-height: 150%;
+        &:first-child{
+          padding-bottom: 10px;
+        }
+        span{
+          font-weight: bold;
+          color: $small-color;
+        }
+      }
+    }
+    .info-list{
+      display: flex;
+      justify-content: space-between;
+      margin: 100px 64px 0;
+      border-top: 1px solid $small-color;
+      .info-list-1{
+        width: 100%;
+      }
+      .info-list-2{
+        width: 100%;
+      }
+      .info-list-3{
+        width: 100%;
+      }
+      .info-list-4{
+        width: 100%;
+      }
+      .info-list-5{
+        width: 100%;
+      }
+    }
+  }
+}
