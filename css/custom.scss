@@ -97,6 +97,7 @@ input, select {
     vertical-align:middle;
 }
 
+
 // cummon_css
 body{
 text-align: center;
@@ -104,11 +105,33 @@ background-color: $default-bg-color;
 color: $normal-color;
 }
 
+.fas{
+  font-family: "Font Awesome 5 Free";
+}
+
 // #custom_css
 header{
   width: 100%;
   position: fixed;
 }
+
+.search-form{
+  display: none;
+  button{
+    vertical-align: -20%;
+    i{
+      color:$small-color ;
+    }
+  }
+input{
+  height: 50px;
+  color:$small-color ;
+  font-size: 17px;
+  width: 50%;
+  text-align: left;
+  }
+}
+
 
 .nav-list{
   display: flex;
@@ -119,15 +142,21 @@ header{
   li{
     a{
       color: $normal-color;
+      opacity: 0.7;
+      transition: .3s ;
       line-height: 50px;
       padding: 0 10px;
       font-size: 14px;
+      &:hover{
+        opacity: 1;
+      }
     }
   }
   .apple-icon a{
     font-size: 20px;
   }
 }
+
 
 .main{
   .main-message{
@@ -161,7 +190,7 @@ header{
   .reserve-message{
     p{
       &:first-child{
-        color: $small-color;
+        color: $normal-color;
       }
       &:last-child{
         padding-top: 10px;
@@ -186,7 +215,7 @@ header{
 
   .info-section{
     .attention{
-      padding: 100px 64px 0;
+      padding: 100px 75px 0;
       p{
         color: $small-color;
         font-size: 10px;
@@ -198,29 +227,91 @@ header{
         }
         span{
           font-weight: bold;
-          color: $small-color;
+          color: $normal-color;
         }
       }
     }
     .info-list{
       display: flex;
       justify-content: space-between;
-      margin: 100px 64px 0;
+      margin: 25px 86px 0;
+      padding: 20px 0;
       border-top: 1px solid $small-color;
+      line-height: 180%;
       .info-list-1{
-        width: 100%;
+        @include info-list-n;
       }
       .info-list-2{
-        width: 100%;
+        @include info-list-n;
       }
       .info-list-3{
-        width: 100%;
+        @include info-list-n;
       }
       .info-list-4{
-        width: 100%;
+        @include info-list-n;
       }
       .info-list-5{
-        width: 100%;
+        @include info-list-n;
+      }
+    }
+    .info-other{
+      border-bottom: 1px solid $small-color;
+      margin: 20px 86px 0;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 11px;
+      color: $small-color;
+      a{
+        color: $link-color;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+footer{
+  .footer-info{
+    margin: 10px 86px 30px;
+    display: flex;
+    justify-content: space-between;
+    .left{
+      display: flex;
+      font-size: 11px;
+      color: $small-color;
+      padding-right: 25px;
+      ul{
+        display: flex;
+        font-size: 11px;
+        li{
+          padding: 0 10px;
+          &:first-child{
+            margin-left: 20px;
+          }
+          a{
+            color: $normal-color;
+            opacity: 0.7;
+            &:hover{
+              opacity: 1;
+              text-decoration: underline;
+            }
+          }
+        }
+        li+ li{
+          border-left: 1px solid #333;
+        }
+      }
+    }
+    .right{
+      a{
+        vertical-align: top;
+        color: $normal-color;
+        opacity: 0.7;
+        font-size: 11px;
+        &:hover{
+          opacity: 1;
+          text-decoration: underline;
+        }
       }
     }
   }

@@ -6,8 +6,10 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title></title>
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-  <link rel="stylesheet" href="./css/common.min.css">
+  <link rel="stylesheet" href="./css/custom.min.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
   <header>
@@ -20,9 +22,12 @@
       <li class="tv-link"><a href="#">TV</a></li>
       <li class="music-link"><a href="#">Music</a></li>
       <li class="support-link"><a href="#">サポート</a></li>
-      <li class="search-link"><a href="#">検索</a></li>
+      <li class="search-link"><a href="#"><i class="fas fa-search"></i></a></li>
       <li class="shop-link"><a href="#">shop</a></li>
     </ul>
+    <div class="search-form">
+      <button type="submit"><i class="fas fa-search"></i></button> <input type="text" name="" placeholder="apple.comを検索" class="fas">
+    </div>
   </header>
   <div class="main">
     <div class="main-message">
@@ -66,36 +71,104 @@
         <p>iPhoneの商標は、<span>アイホン株式会社</span>のライセンスにもとづき使用されています。</p>
       </div>
       <div class="info-list">
-        <div class="info-list-1" style="border: 10px solid gray; box-sizing: border-box;">
+        <div class="info-list-1">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="bold">製品情報と購入</li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">AirPods</a></li>
+            <li><a href="#">HomePod</a></li>
+            <li><a href="#">iPod touch</a></li>
+            <li><a href="#">アクセサリ</a></li>
+            <li><a href="#">ギフトカード</a></li>
           </ul>
         </div>
         <div class="info-list-2">
-
+          <ul>
+            <li class="bold">サービス</li>
+            <li><a href="#">Apple Music</a></li>
+            <li><a href="#">Apple TV+</a></li>
+            <li><a href="#">Apple Arcade</a></li>
+            <li><a href="#">iCloud</a></li>
+            <li>　　　</li>
+            <li class="bold">アカウント</li>
+            <li><a href="#">Apple IDの管理</a></li>
+            <li><a href="#">Apple Storeアカウント</a></li>
+            <li><a href="#">iCloud.com</a></li>
+          </ul>
         </div>
         <div class="info-list-3">
-
+          <ul>
+            <li class="bold">Apple Store</li>
+            <li><a href="#">お近くのApple Store</a></li>
+            <li><a href="#">Genius Bar</a></li>
+            <li><a href="#">Today at Apple</a></li>
+            <li><a href="#">サマーキャンプ</a></li>
+            <li><a href="#">フィールドトリップ</a></li>
+            <li><a href="#">Apple Store App</a></li>
+            <li><a href="#">整備済製品＆旧モデル新品</a></li>
+            <li><a href="#">分割でのお支払い</a></li>
+            <li><a href="#">Apple Trade In</a></li>
+            <li><a href="#">ご注文状況</a></li>
+            <li><a href="#">ご利用ガイド</a></li>
+          </ul>
         </div>
         <div class="info-list-4">
-
+          <ul>
+            <li class="bold">ビジネス</li>
+            <li><a href="#">Appleとビジネス</a></li>
+            <li><a href="#">ビジネス向けストア</a></li>
+            <li>　　　</li>
+            <li class="bold">教育</li>
+            <li><a href="#">学生・教職員向けストア</a></li>
+            <li>　　　</li>
+            <li class="bold">ヘルスケア</li>
+            <li><a href="#">Appleとヘルスケア</a></li>
+          </ul>
         </div>
         <div class="info-list-5">
-
+          <ul>
+            <li class="bold">Appleの取り組み</li>
+            <li><a href="#">アクセシビリティ</a></li>
+            <li><a href="#">環境</a></li>
+            <li><a href="#">プライバシー</a></li>
+            <li><a href="#">サプライヤー責任</a></li>
+            <li>　　　</li>
+            <li class="bold">Appleについて</li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Appleの役員について</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">イベント</a></li>
+            <li><a href="#">雇用創出</a></li>
+            <li><a href="#">Appleの連絡先</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="info-other">
+        そのほかの購入方法：<a href="#">お近くのApple Store</a>、<a href="#">またはApple製品取扱店</a>で製品を購入することもできます。電話による購入、ご相談は<a href="#">0120-993-993</a>まで。English Sales Line, <a href="#">Click here.</a>
       </div>
     </div>
   </div>
+  <footer>
+    <div class="footer-info">
+      <div class="left"></p>
+        Copyright © 2020 Apple Inc. All rights reserved.
+        <ul>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">利用規約</a></li>
+          <li><a href="#">販売条件</a></li>
+          <li><a href="#">Legal Information</a></li>
+          <li><a href="#">サイトマップ</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="#">日本</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
